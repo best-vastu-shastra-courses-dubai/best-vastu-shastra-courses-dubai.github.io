@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://best-vastu-shastra-courses-dubai.github.io/sitemap.xml
