@@ -1,0 +1,54 @@
+:root {
+  --ink: #2b2620;
+  --muted: #6f655a;
+  --accent: #a34d1c;
+  --line: #e8e0d4;
+  --bg: #fdfbf7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 17px;
+}
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+.site-header { border-bottom: 1px solid var(--line); padding: 18px 0; }
+.site-header .wrap { display: flex; justify-content: space-between; align-items: center; }
+.site-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px; font-weight: bold; color: var(--ink); text-decoration: none;
+}
+.site-header nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: 15px; }
+.site-header nav a:hover { color: var(--accent); }
+main.wrap { padding-top: 40px; padding-bottom: 60px; }
+.intro h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px; line-height: 1.25; margin: 0 0 12px;
+}
+.intro p { color: var(--muted); font-size: 18px; margin: 0 0 40px; }
+.posts h2 {
+  font-size: 13px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--muted); margin: 0 0 20px;
+}
+.post-card { border-top: 1px solid var(--line); padding: 22px 0; }
+.post-card h3 { font-family: Georgia, "Times New Roman", serif; font-size: 24px; margin: 6px 0 8px; }
+.post-card h3 a { color: var(--ink); text-decoration: none; }
+.post-card h3 a:hover { color: var(--accent); }
+.post-card p { margin: 0; color: var(--muted); }
+.post-date { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+.post h1 { font-family: Georgia, "Times New Roman", serif; font-size: 36px; line-height: 1.25; margin: 8px 0 24px; }
+.post-body p { margin: 0 0 1.2em; }
+.post-body a { color: var(--accent); }
+.back { margin-top: 40px; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a:hover { color: var(--accent); }
+.page h1 { font-family: Georgia, "Times New Roman", serif; font-size: 34px; margin: 8px 0 20px; }
+.site-footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 14px; }
+.site-footer p { margin: 0; }
+@media (max-width: 560px) {
+  .intro h1 { font-size: 28px; }
+  .post h1 { font-size: 29px; }
+}

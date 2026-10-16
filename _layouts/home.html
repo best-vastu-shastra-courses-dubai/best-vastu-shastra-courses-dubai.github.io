@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>Find the best Vastu Shastra course in Dubai.</h1>
+  <p>Course guides, honest comparisons and practical advice on learning Vastu Shastra in the UAE. What each course teaches, how the classes run, and what they cost.</p>
+</section>
+<section class="posts">
+  <h2>Latest posts</h2>
+  {% for post in site.posts %}
+  <article class="post-card">
+    <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  </article>
+  {% endfor %}
+</section>
